@@ -12,7 +12,7 @@ console.log(process.env)
 
 export default class Home extends Component {
   render() {
-    let { title, cats, avatar } = attributes;
+    let { title, cats, galleryImages } = attributes;
     return (
       <>
         <Head>
@@ -22,13 +22,15 @@ export default class Home extends Component {
         <article>
             <Link href="/galerie">Galerie</Link>
           <h1>{title} !</h1>
-          
-           <Image 
-          src={avatar}
-          alt="rate"
+          {galleryImages.map((img, k) =>(
+            <Image 
+          src={img.src}
+          alt={img.alt}
           width='350px'
           height='400px'
-          /> 
+          />
+          ))}
+            
          
           
           <GalerieContent />
