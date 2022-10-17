@@ -13,7 +13,7 @@ export default class Home extends Component {
           <title>my first netlify</title>
         </Head>
         <article>
-          <h1>{title}</h1>
+          <h1>{title} !</h1>
           <GalerieContent />
           <ul>
             {cats.map((cat, k) => (
