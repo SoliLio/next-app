@@ -1,7 +1,13 @@
 import Head from "next/head"
+import Image from "next/image";
 import { Component } from 'react'
 //import { attributes, react as HomeContent } from '../content/home.md';
 import { attributes, react as GalerieContent } from '../content/galerie.md';
+import image from '../public/img/avatar.jpg'
+
+
+
+console.log(process.env)
 
 export default class Home extends Component {
   render() {
@@ -14,6 +20,10 @@ export default class Home extends Component {
         </Head>
         <article>
           <h1>{title} !</h1>
+          <Image 
+          src={image}
+          alt='picture'
+          />
           <GalerieContent />
           <ul>
             {cats.map((cat, k) => (

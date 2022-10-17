@@ -8,6 +8,10 @@ cats:
     name: Lil doudou
   - description: 'lorem contentus'
     name: tertitaire)
+
+images: 
+  - name: Jean Jacque
+  - url : ../    
 ---
 Welcome to my awesome page about cats of the internet.
 
