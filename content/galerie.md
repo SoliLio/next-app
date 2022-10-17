@@ -1,6 +1,13 @@
 ---
 title: Galerie  Photo
 date: 2019-03-17T19:31:20.591Z
+
+quote: kevin
+
+author: 
+    - name: Picture
+      avatar: /img/avatar.jpg
+
 cats:
   - description: Test 2 eme pas
     name: Test One    
@@ -11,7 +18,9 @@ cats:
 
 images: 
   - name: Jean Jacque
-  - url : ../    
+    url : test  
+
+
 ---
 Welcome to my awesome page about cats of the internet.
 
