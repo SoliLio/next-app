@@ -12,7 +12,7 @@ console.log(process.env)
 
 export default class Home extends Component {
   render() {
-    let { title, cats, images, author } = attributes;
+    let { title, cats, avatar } = attributes;
     return (
       <>
         <Head>
@@ -22,20 +22,17 @@ export default class Home extends Component {
         <article>
             <Link href="/galerie">Galerie</Link>
           <h1>{title} !</h1>
-          {author.map((auth, k) => (
+          
            <Image 
-          src={auth.avatar}
-          alt={auth.name}
+          src={avatar}
+          alt="rate"
           width='350px'
           height='400px'
           /> 
-          ))}
+         
           
           <GalerieContent />
-          {images.map((image, k) => (
-            <p id={k}>{image.name}</p>
-          ))          
-          }
+        
           <ul>
             {cats.map((cat, k) => (
               <li key={k}>

@@ -4,9 +4,7 @@ date: 2019-03-17T19:31:20.591Z
 
 quote: kevin
 
-author: 
-    - name: Picture
-      avatar: /img/avatar.jpg
+avatar: /img/avatar.jpg
 
 cats:
   - description: Test 2 eme pas
