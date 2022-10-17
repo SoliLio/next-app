@@ -34,12 +34,13 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string"}
               - { label: "Description", name: "description", widget: "text"}
-            # - label: "Gallery"
-            #    name: "galleryImages"
-            #    widget: "list"
-            #    fields:
-            #      - { label: "Source", name: "src", widget: "string" }
-            #      - { label: "Alt Text", name: "alt", widget: "string" }
-            #    default:
-            #      - { src: "/img/tennis.jpg", alt: "Tennis" }
-            #      - { src: "/img/footbar.jpg", alt: "Football" }
+
+          - label: "Gallery"
+               name: "galleryImages"
+               widget: "list"
+               fields:
+                 - { label: "Source", name: "src", widget: "string" }
+                 - { label: "Alt Text", name: "alt", widget: "string" }
+               default:
+                 - { src: "/img/tennis.jpg", alt: "Tennis" }
+                 - { src: "/img/footbar.jpg", alt: "Football" }
