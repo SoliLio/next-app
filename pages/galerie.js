@@ -1,8 +1,11 @@
 import Head from "next/head"
+import Image from "next/image";
 import Link from "next/link"
 import React from 'react'
+import { attributes, react as GalleryContent } from '../content/carroussel.md';
 
 const galerie = () => {
+  let { title, galleryImages } = attributes
   return (
     <>
     <Head>
@@ -10,6 +13,18 @@ const galerie = () => {
           <title>Galerie</title>
         </Head>
         <Link href="/">Acceuil</Link>
+        <h1>{title}</h1>
+        <GalleryContent />
+        <ul>
+          {galleryImages.map((img, k) => (
+            <Image 
+            src={img.image}
+            alt={img.alt}
+            width="150px"
+            height="150px"
+            />
+          ))}
+        </ul>
     </>
   )
 }

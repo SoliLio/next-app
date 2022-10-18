@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Component } from 'react'
 //import { attributes, react as HomeContent } from '../content/home.md';
 import { attributes, react as HomeContent } from '../content/home.md';
+
 //import image from '../public/img/avatar.jpg'
 
 
@@ -12,7 +13,9 @@ console.log(process.env)
 
 export default class Home extends Component {
   render() {
-    let { title, cats, galleryImages } = attributes;
+    let { title, cats } = attributes;
+    
+    
     return (
       <>
         <Head>
@@ -21,15 +24,7 @@ export default class Home extends Component {
         </Head>
         <article>
             <Link href="/galerie">Galerie</Link>          
-          <HomeContent />
-          {galleryImages.map((image, k)  => (
-            <Image
-            src={image.src}
-            alt={image.alt}
-            width='150px'
-            height='150px'
-            />
-          ) )}
+          <HomeContent />         
         
           <ul>
             {cats.map((cat, k) => (
