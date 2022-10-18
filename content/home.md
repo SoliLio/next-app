@@ -11,6 +11,10 @@ cats:
   - name: "Ajout d'un item a la liste "
     description: |
       second test ok
+
+galleryImages: 
+  - src: /img/avatar.jpg
+  - alt: 'schone'
 ---
 Welcome to my awesome page about cats of the internet.
 

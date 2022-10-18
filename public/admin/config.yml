@@ -20,3 +20,10 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
+      - name: "galleryImages"
+        label: "Gallery"
+        widget: "list"
+        fields:
+            - { label: "Source", name: "src", widget: "string" }
+            - { label: "Alt Text", name: "alt", widget: "string" }
+             

@@ -20,13 +20,16 @@ export default class Home extends Component {
           <title>my first netlify</title>
         </Head>
         <article>
-            <Link href="/galerie">Galerie</Link>
-          
-          
-            
-         
-          
+            <Link href="/galerie">Galerie</Link>          
           <HomeContent />
+          {galleryImages.map((image, k)  => (
+            <Image
+            src={image.src}
+            alt={image.alt}
+            width='150px'
+            height='150px'
+            />
+          ) )}
         
           <ul>
             {cats.map((cat, k) => (
