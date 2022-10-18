@@ -22,7 +22,7 @@ export default class Home extends Component {
         <article>
             <Link href="/galerie">Galerie</Link>
           
-          ))}
+          
             
          
           
