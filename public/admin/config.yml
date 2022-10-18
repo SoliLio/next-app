@@ -34,4 +34,5 @@ collections:
           fields: 
              - {label: "Image", name: "image", widget: "image"}
              - {label: "Alt", name: "alt", widget: "string"}
+             - {label: "Categories", name: "categories", widget: "hidden", default: "standar"}
            

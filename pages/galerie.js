@@ -15,16 +15,16 @@ const galerie = () => {
         <Link href="/">Acceuil</Link>
         <h1>{title}</h1>
         <GalleryContent />
-        <ul>
+        
           {galleryImages.map((img, k) => (
             <Image 
-            src={img.image}
+            src={'/'+ img.image}
             alt={img.alt}
             width="150px"
             height="150px"
             />
           ))}
-        </ul>
+        
     </>
   )
 }
