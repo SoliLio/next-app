@@ -34,5 +34,10 @@ collections:
           fields: 
              - {label: "Image", name: "image", widget: "image"}
              - {label: "Alt", name: "alt", widget: "string"}
-             - {label: "Categories", name: "categories", widget: "hidden", default: "standar"}
+             - {label: "Categories", 
+                name: "categories", 
+                widget: "select",                
+                options: ["Mariage", "Naissance", "Bapteme"],
+                default: ["news"]
+                }
            
