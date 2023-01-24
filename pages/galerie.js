@@ -10,7 +10,7 @@ const galerie = () => {
     <>
     <Head>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-          <title>Galerie</title>
+          <title>Galeries</title>
         </Head>
         <Link href="/">Acceuil</Link>
         <h1>{title}</h1>
